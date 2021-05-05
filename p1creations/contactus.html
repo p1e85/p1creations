@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P1 Creations - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/final.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="imgs/p1logo.svg" alt="p1 creations logo">
+        <h1 class="header__title">
+          P1 Creations
+        </h1>
+        <a id="menu" class="header__menu">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+         </svg>
+       </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html">Home</a></li>
+        <li class="nav__item"><a href="about.html">About</a></li>
+        <li class="nav__item"><a href="projects.html">Projects</a></li>
+        <li class="nav__item"><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+
+      </section> <!-- end content-->
+      <footer>
+        <ul>
+          <li><a href="mailto:p1creationsco@gmail.com"><img src="imgs/socialicons/email.svg"></a></li>
+          <!-- icons provide by https://www.iconfinder.com/Dawoodicons https://creativecommons.org/licenses/by/3.0/ -->
+          <li><a href="https://twitter.com/p1creations"><img src="imgs/socialicons/twitter.svg"></a></li>
+          <li><a href="https://www.facebook.com/p1creations"><img src="imgs/socialicons/facebook.svg"></a></li>
+          <!-- icons provide by https://www.iconfinder.com/aref80 https://creativecommons.org/licenses/by/3.0/ -->
+        </ul>
+      </footer>
+    </main>
+
+    <!-- nav drawer script -->
+    <script>
+      var menu = document.querySelector('#menu');
+      var home = document.querySelector('home');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+
+      main.addEventListener('click', function() {
+       drawer.classList.remove('open');
+     });
+
+    </script>
+  </body>
+
+  </html>

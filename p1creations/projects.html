@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P1 Creations - Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/final.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="imgs/p1logo.svg" alt="p1 creations logo">
+        <h1 class="header__title">
+          P1 Creations
+        </h1>
+        <a id="menu" class="header__menu">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+         </svg>
+       </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html">Home</a></li>
+        <li class="nav__item"><a href="about.html">About</a></li>
+        <li class="nav__item"><a href="projects.html">Projects</a></li>
+        <li class="nav__item"><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <section class="dev__updates">
+          <h2 class="project__title">Projects</h2>
+          <ul>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="imgs/latestupdateshot1.png" alt="screenshot of mars revenge world 2">
+              <h3 class="snippet__title">Mars Revenge, currently still in development.</h3>
+              <p class="snippet__description">Started using Unity game engine for this project. Unity is also cross platform, but it is based on C#. This title is going to be the biggest release yet for P1 Creations, almost done with our android demo. Which we will release as soon as world 3 is fully built and tested.</p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="imgs/supermarsimage.png" alt="screenshot of super mars title screen">
+              <h3 class="snippet__title">Super Mars, also made with libGDX.</h3>
+              <p class="snippet__description">It was a lot of fun learning to make a flappy bird clone. Unfortunately with all of the clones already out there I decided not to release this to the public. Yes, I did reuse the same character from Jump, Jump, Mars has made a hit he is going to be used again for current title.</p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="imgs/jumptitleimage.png" alt="screenshot of jump jump title screen">
+              <h3 class="snippet__title">Jump Jump, another libGDX framework based game.</h3>
+              <p class="snippet__description">For my second game this was a great learning experience, and I had a lot of fun drawing the graphics and writting the code. With this game we created our first character, besides a snake, Mars was hit frm the start. That is why we reused him in our games, not just because I'm not a graphic designer.</p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="imgs/snakeeatimage.png" alt="screenshot of snake eat title screen">
+              <h3 class="snippet__title">Snake Eat, was first game created.</h3>
+              <p class="snippet__description">Made with libGDX framework, an awesome cross-platform Java based game development framework, that is open-source. Drawing the 2d graphics for this game was a challenge as I am not an artist persay, but since the assests for this game were only about 32x32 pixels I had a lot of fun creating them.</p>
+            </li>
+          </ul>
+        </section>
+      </section> <!-- end content-->
+
+      <footer>
+        <ul>
+          <li><a href="https://twitter.com/p1creations"><img src="imgs/socialicons/twitter.svg"></a></li>
+          <li><a href="https://www.facebook.com/p1creations"><img src="imgs/socialicons/facebook.svg"></a></li>
+          <!-- icons provide by https://www.iconfinder.com/aref80 https://creativecommons.org/licenses/by/3.0/ -->
+        </ul>
+      </footer>
+    </main>
+
+    <!-- nav drawer script -->
+    <script>
+      var menu = document.querySelector('#menu');
+      var home = document.querySelector('home');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+
+      main.addEventListener('click', function() {
+       drawer.classList.remove('open');
+     });
+
+    </script>
+  </body>
+
+  </html>
